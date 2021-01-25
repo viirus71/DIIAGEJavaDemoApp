@@ -47,6 +47,7 @@ public class GalleryFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
         galleryViewModel =
                 new ViewModelProvider(this,getDefaultViewModelProviderFactory()).get(GalleryViewModel.class);
+
         galleryViewModel.getQuotes().observe(getViewLifecycleOwner()
                 ,quotePagingData -> adapter.submitData(getLifecycle(),quotePagingData));
 

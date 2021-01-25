@@ -56,7 +56,7 @@ public class QuoteEditFragment extends Fragment {
 
             viewModel.getDismiss().observe(getViewLifecycleOwner(),new EventObserver<>(data -> {
                 if (data != null && data){
-                    Navigation.findNavController(binding.getRoot()).navigate(R.id.action_nav_quote_edit_pop2);
+                    Navigation.findNavController(binding.getRoot()).navigate(QuoteEditFragmentDirections.actionNavQuoteEditPop2());
                 }
             }));
 

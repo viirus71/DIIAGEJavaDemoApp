@@ -18,6 +18,12 @@
         tools:layout="@layout/fragment_gallery" />
 
     <fragment
+        android:id="@+id/nav_vehicul"
+        android:name="diiage.potherat.demo.demoapp3.ui.vehicule.VehiculeFragment"
+        android:label="@string/menu_vehicul"
+        tools:layout="@layout/vehicule_fragment" />
+
+    <fragment
         android:id="@+id/nav_quote_edit"
         android:name="diiage.potherat.demo.demoapp3.ui.edit.QuoteEditFragment"
         android:label="@string/quote_edit"

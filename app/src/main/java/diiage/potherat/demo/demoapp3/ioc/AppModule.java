@@ -5,9 +5,6 @@ import android.util.Log;
 
 import androidx.room.Room;
 
-import com.google.gson.Gson;
-import com.jakewharton.retrofit2.adapter.rxjava2.RxJava2CallAdapterFactory;
-
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.TimeUnit;
@@ -23,7 +20,6 @@ import diiage.potherat.demo.demoapp3.dal.repository.QuoteRepository;
 import diiage.potherat.demo.demoapp3.dal.repository.SWRepository;
 import diiage.potherat.demo.demoapp3.dal.retrofit.SwRetrofit;
 import diiage.potherat.demo.demoapp3.dal.retrofit.livedata.LiveDataCallAdapterFactory;
-import diiage.potherat.demo.demoapp3.dal.room.Converters;
 import diiage.potherat.demo.demoapp3.dal.room.QuotesDatabase;
 import okhttp3.OkHttpClient;
 import okhttp3.Request;
